@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <title>三角函數</title>
+        <style>
+            p {
+                flex: flex-wrap;
+            }
+            input {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <b>四捨五入到小數點後四位</b>
+        <br>
+        <a href = "首頁.html">首頁</a>
+        <hr>
+        <p>sinθ θ = <input class = "sin" placeholder = "請輸入角度"/><p class = "psin"></p></p>
+        <p class = "psin"></p>
+        <button onclick = 'sin()'>計算正弦值</button>
+
+        <p>cosθ θ = <input class = "cos" placeholder = "請輸入角度"/></p>
+        <p class = "pcos"></p>
+        <button onclick = 'cos()'>計算餘弦值</button>
+
+        <p>tanθ θ = <input class = "tan" placeholder = "請輸入角度"/></p>
+        <p class = "ptan"></p>
+        <button onclick = 'tan()'>計算正切值</button>
+
+        <p>secθ θ = <input class = "sec" placeholder = "請輸入角度"/></p>
+        <p class = "psec"></p>
+        <button onclick = 'sec()'>計算正割值</button>
+        
+        <p>cscθ θ = <input class = "csc" placeholder = "請輸入角度"/></p>
+        <p class = "pcsc"></p>
+        <button onclick = 'csc()'>計算餘割值</button>
+
+        <p>cotθ θ = <input class = "cot" placeholder = "請輸入角度"/></p>
+        <p class = "pcot"></p>
+        <button onclick = 'cot()'>計算餘切值</button>
+
+        <p>
+            sin(a+b)
+            sin(a) = <input class = "sinA" placeholder = "請輸入角度"/>
+            sin(b) = <input class = "sinB" placeholder = "請輸入角度"/>
+        </p>
+        <p class = "SinSum"></p>
+        <button onclick = 'sinAngleSum()'>計算</button>
+
+        <p>
+            cos(a+b)
+            cos(a) = <input class = "cosA" placeholder = "請輸入角度"/>
+            cos(b) = <input class = "cosB" placeholder = "請輸入角度"/>
+        </p>
+        <p class = "CosSum"></p>
+        <button onclick = 'cosAngleSum()'>計算</button>
+
+        <p>
+            tan(a+b)
+            tan(a) = <input class = "tanA" placeholder = "請輸入角度"/>
+            tan(b) = <input class = "tanB" placeholder = "請輸入角度"/>
+        </p>
+        <p class = "tanSum"></p>
+        <button onclick = 'tanAngleSum()'>計算</button>
+
+        <script src = "三角函數.js"></script>
+    </body>
+</Html>
