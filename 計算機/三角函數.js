@@ -5,7 +5,8 @@ function sin() {
     content = `sin(${input}) = ${result}`;
     document.querySelector('.psin').innerHTML = content;
     document.querySelector('.sin').value = "";
-}
+};
+
 function cos() {
     const input = document.querySelector('.cos').value;
     let result = Math.cos(Number(input));
@@ -13,7 +14,8 @@ function cos() {
     content =  `cos(${input}) = ${result}`;
     document.querySelector('.pcos').innerHTML = content;
     document.querySelector('.cos').value = "";
-}
+};
+
 function tan() {
     const input = document.querySelector('.tan').value;
     let result = Math.tan(Number(input));
@@ -21,7 +23,8 @@ function tan() {
     content =  `tan(${input}) = ${result}`;
     document.querySelector('.ptan').innerHTML = content;
     document.querySelector('.tan').value = "";
-}
+};
+
 function sec() {
     const input = document.querySelector('.sec').value;
     let result = 1 / Math.cos(Number(input));
@@ -29,7 +32,8 @@ function sec() {
     content =  `sec(${input}) = ${result}`;
     document.querySelector('.psec').innerHTML = content;
     document.querySelector('.sec').value = "";
-}
+};
+
 function csc() {
     const input = document.querySelector('.csc').value;
     let result = 1 / Math.sin(Number(input));
@@ -37,7 +41,8 @@ function csc() {
     content =  `csc(${input}) = ${result}`;
     document.querySelector('.pcsc').innerHTML = content;
     document.querySelector('.csc').value = "";
-}
+};
+
 function cot() {
     const input = document.querySelector('.cot').value;
     let result = 1 / Math.tan(Number(input));
@@ -45,7 +50,7 @@ function cot() {
     content =  `cot(${input}) = ${result}`;
     document.querySelector('.pcot').innerHTML = content;
     document.querySelector('.cot').value = "";
-}
+};
 
 function sinAngleSum() {
     const input1 = document.querySelector('.sinA').value;
@@ -57,7 +62,7 @@ function sinAngleSum() {
     document.querySelector('.SinSum').innerHTML = content;
     document.querySelector('.sinA').value = "";
     document.querySelector('.sinB').value = "";
-}
+};
 
 function cosAngleSum() {
     const input1 = document.querySelector('.cosA').value;
@@ -69,7 +74,7 @@ function cosAngleSum() {
     document.querySelector('.CosSum').innerHTML = content;
     document.querySelector('.cosA').value = "";
     document.querySelector('.cosB').value = "";
-}
+};
 
 function tanAngleSum() {
     const input1 = document.querySelector('.tanA').value;
@@ -81,4 +86,4 @@ function tanAngleSum() {
     document.querySelector('.tanSum').innerHTML = content;
     document.querySelector('.tanA').value = "";
     document.querySelector('.tanB').value = "";
-}
+};

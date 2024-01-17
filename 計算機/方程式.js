@@ -21,4 +21,4 @@ function QuadraticEquationSolve() {
         content += "此方程式無解";
     }
     document.querySelector('.QuadraticEquation').innerHTML = content;
-}
+};

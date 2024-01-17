@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8"/>
+        <style>
+            input {
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <a href = "首頁.html">首頁</a>
+        <p style = "color: red">注意事項:</p>
+        <p>1. 計算內心座標時，請確保你輸入的三角形與其座標真實存在</p>
+        <p>2. 小數點四捨五入至第五位</p>
+        <p>3. 邊長僅需要在計算內心時輸入即可</p>
+        <p>4. 計算面積時單位自己換</p>
+        <p>5. 角度皆為弧度制</p>
+        <p></p>
+        <hr>
+        <h3>計算外心或內心座標</h3>
+        <p>請輸入三點個別座標:</p>
+        <p>
+            <input class = "x1" placeholder = "請輸入x1"/>
+            <input class = "y1" placeholder = "請輸入y1"/>
+            <input class = "side1" placeholder = "請輸入此座標對應的邊長"/>
+        </p>
+        <p>
+            <input class = "x2" placeholder = "請輸入x2"/>
+            <input class = "y2" placeholder = "請輸入y2"/>
+            <input class = "side2" placeholder = "請輸入此座標對應的邊長"/>
+        </p>
+        <p>
+            <input class = "x3" placeholder = "請輸入x3"/>
+            <input class = "y3" placeholder = "請輸入y3"/>
+            <input class = "side3" placeholder = "請輸入此座標對應的邊長"/>
+        </p>
+        <p class = "pResult"></p>
+        <button onclick = "solveCircumcentre()">計算外心座標</button>
+        <button onclick = "solveIncentre()">計算內心座標</button>
+        <button onclick = "solveCentroid()">計算重心(形心)座標</button>
+        <button onclick = "clearInput1()">清除輸入欄</button>
+
+        <h3>給定兩個向量計算三角形面積</h3>
+        <p>
+            <input class = "xFirstVector" placeholder = "請輸入向量1的x"/>
+            <input class = "yFirstVector" placeholder = "請輸入向量1的y"/>
+        </p>
+        <p>
+            <input class = "xSecondVector" placeholder = "請輸入向量2的x"/>
+            <input class = "ySecondVector" placeholder = "請輸入向量2的y"/>
+        </p>
+        <p class = "vectorResult"></p>
+        <button onclick = "calculateAreaByVector()">計算三角形面積</button>
+        <button onclick = "clearInput2()">清除輸入欄</button>
+        
+        <h3>給定三角形的三個邊長計算三角形面積</h3>
+        <p>
+            <input class = "firstSideLength" placeholder = "請輸入第一邊長的長度"/>
+            <input class = "secondSideLength" placeholder = "請輸入第二邊長的長度"/>
+            <input class = "thirdSideLength" placeholder = "請輸入第三邊長的長度"/>
+        </p>
+        <p class = "sideResult"></p>
+        <button onclick = "calculateAreaBySideLength()">計算三角形面積</button>
+        <button onclick = "clearInput3()">清除輸入欄</button>
+
+        <script src = "三角形.js"></script>
+        <script>
+            
+        </script>
+    </body>
+</html>
